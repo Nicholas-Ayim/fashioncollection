@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    outline:none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header_container{
+    background: #eee;
+    width:100%;
+    height: 2rem;
+}
+.header_nav{
+    float: right;
+    display: flex;
+}
+.header_nav li a{
+   border:1px solid rgba(100, 0, 128, 0.563);
+   border-top-color:white;
+   border-bottom-color:white;
+   padding:1.5rem;
+   font-size: 12px;
+   color:grey;
+}
+.header_nav li a:hover{
+    color:rgba(0, 60, 255, 0.585);
+    transition: all 0.3s ease;
+    cursor:pointer;
+}
+
+
+.navbar{
+    display: flex;
+    background: rgba(0, 0, 0, 0.86);  
+    gap:3rem;  
+}
+.trend{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.trend li{
+    padding:2rem;
+}
+.trend li:hover{
+    cursor:pointer;
+    transition: all 0.3s ease;
+    background: purple;
+}
+.trend li a{
+    color:white;
+}
+.active{
+    background: rgba(0, 102, 255, 0.63) ;
+}
+.search_details{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.search_details li{
+    padding-left:1rem;
+    padding-right:1rem;
+}
+.search_details li input{
+    width:700px;
+    padding:0.5rem;
+    border-radius: 50px;
+}
+.fa-search {
+    position: relative;
+    right:30px;
+    top:2px;
+    color:purple;
+    cursor:pointer;
+}
+.fa-bars{
+    color:purple;
+    cursor:pointer;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons li{
+    padding:0.5rem;
+}
+.icons .submenu{
+    border:2px solid green;
+    padding:2rem;
+    align-items: center;
+    justify-content: center;
+}
+.drop{
+    display: none;
+}
+.signup{
+    display: flex;
+    gap:10px;
+}
+hr{
+    width: 100%;
+}
+.signup li{
+    padding: 5px;
+}
+.grid-profile{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 10px;
+    grid-gap:1rem;
+}
+
+  .container{
+    padding:10px;
+    display:none;
+    position: absolute;
+    right:20px;
+    width: 300px;
+    height:310px;
+    background: grey;
+    border:2px solid blue;
+  }
+.navbar2{
+    display: flex;
+    padding-left:1rem;
+    background: rgba(0, 0, 0, 0.219);
+    height:3rem;
+   
+}
+.productlist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+.productlist li{
+    display: flex;
+    padding:0.3rem;
+    text-transform: capitalize;
+    color:#fff;
+}
+.productlist li:not(:first-child):not(:last-child):hover{
+    position:relative;
+    height:3rem;
+    line-height: 2.5rem;
+    cursor:pointer;
+    background: purple;
+    transition: all 0.3s ease;
+}
+
+.productContainer{
+    
+    margin-left:3rem;
+    margin-right: 3rem;
+    background-color: #eee;
+}
+.grid_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px;
+    border:1px solid green;
+    padding:20px;
+
+}
+.grid_container li{
+    padding-top: 1rem;
+    padding-left: 1rem;
+
+}
+.header{
+    padding-left: 1rem;
+    text-decoration: underline;
+    font-size:15px;
+    word-spacing: 5px;
+}
+.news_box{
+    border:1px solid #fff;
+    border-top-color: #eee;
+    border-bottom-color: #eee;
+    border-left-color: #eee;
+}
+.news_box:last-child{
+    border-right-color:#eee;
+}
+.trending{
+    display:flex;
+    gap:2rem;
+    padding-top: 1rem;
+}
+.trending span{
+    position: relative;
+    top:1rem;
+    text-decoration: underline;
+}
+img:hover{
+    border:1px solid red;
+    transition: all 0.3s ease;
+}
+img{
+    height:50px;
+    width:50px;
+    object-fit:contain;
+     border: 1px solid green;
+     border-radius: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+    .search_details {
+        display: none;
+    }
+
+    .icons li:not(.submenu) {
+        display: none;
+    }
+
+    .trend {
+        padding: 1rem;
+    }
+    .trend li{
+        padding:3rem;
+    }
+}
+        
